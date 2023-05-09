@@ -1,4 +1,8 @@
 export default function Index() {
+
+  const isBrowser = typeof document !== "undefined" && typeof process === "undefined";
+  console.log('COPPIN', isBrowser);
+
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       <h1>Welcome to Remix</h1>
