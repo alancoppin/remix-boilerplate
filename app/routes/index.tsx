@@ -1,6 +1,6 @@
 export default function Index() {
 
-  const isBrowser = typeof document !== "undefined" && typeof process === "undefined";
+  const isBrowser = typeof window !== "undefined";
   console.log('COPPIN', isBrowser);
 
   return (
